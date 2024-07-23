@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berglunds bygg</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">Berglunds bygg</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Start</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">Om</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#services" class="navbar_links" id="services-page">Tjänster</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#contact" class="navbar_links" id="contact-page">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero-container">
+            <h1 class="hero_heading">Välkommen till <span>Berglunds bygg</span></h1>
+            <p class="hero_description">En snickarfirma i Härnösand</p>
+        </div>
+    </div>
+
+    <div class="main" id="about">
+        <div class="main_container">
+            <div class="main_img-container">
+                <div class="main_img-card"><img class="icon" src="icons\freddesHemsida.png" alt=""></div>
+            </div>
+            <div class="main_content">
+                <h1>Hej! Jag heter Fredrik</h1>
+                <h2>Jag hjälper dig med ditt byggande</h2>
+                <p>Jag har arbetat som snickare i 20år!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <h1>Tjänster</h1>
+        <div class="services_wrapper">
+            <div class="services_card"><img class="services_icons" src="icons\roof.png" alt="">
+                <h2>Takbyte</h2>
+                <p>Jag har många års erfarenhet och utbildning om detta.</p>
+                <div class="services_btn" id="services_btn1"><button data-modal-target="#modal1">Läs mer</button></div>
+                    <div id="modal1" class="modal">
+                        <div class="modal_header">
+                            <div class="modal_title">Tak</div>
+                            <button data-close-button class="close_button">&times;</button>
+                        </div>
+                        <div class="modal_body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            A animi cum praesentium labore alias beatae, qui dolor tenetur?
+                            Voluptatibus magni deserunt vitae sunt harum obcaecati ex minus
+                            ducimus dolore! In?
+                        </div>
+                    </div>
+            </div>
+
+            <div class="services_card"><img class="services_icons" src="icons\window.png" alt="">
+                <h2>Fönsterbyten</h2>
+                <p>Spara energi genom att byta fönster</p>
+                <div class="services_btn" id="services_btn1"><button data-modal-target="#modal2">Läs mer</button></div>
+                    <div id="modal2" class="modal">
+                        <div class="modal_header">
+                            <div class="modal_title">Fönster</div>
+                            <button data-close-button class="close_button">&times;</button>
+                        </div>
+                        <div class="modal_body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            A animi cum praesentium labore alias beatae, qui dolor tenetur?
+                            Voluptatibus magni deserunt vitae sunt harum obcaecati ex minus
+                            ducimus dolore! In?
+                        </div>
+                    </div>
+            </div>
+            <div class="services_card"><img class="services_icons" src="icons\kitchen.png" alt="">
+                <h2>Renovering</h2>
+                <p>Bra planering är nyckeln till en riktigt bra renovering</p>
+                <div class="services_btn" id="services_btn1"><button data-modal-target="#modal3">Läs mer</button></div>
+                    <div id="modal3" class="modal">
+                        <div class="modal_header">
+                            <div class="modal_title">Renovering</div>
+                            <button data-close-button class="close_button">&times;</button>
+                        </div>
+                        <div class="modal_body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            A animi cum praesentium labore alias beatae, qui dolor tenetur?
+                            Voluptatibus magni deserunt vitae sunt harum obcaecati ex minus
+                            ducimus dolore! In?
+                        </div>
+                    </div>
+                    <div id="modal_overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Kontakt</h1>
+        <input class="fullName" type="text" placeholder="Fullständigt namn *" id="fullName" required> <br>
+        <input class="mail" type="text" placeholder="Mail adress *" id="mail"> <br>
+        <input class="number" type="text" placeholder="Telefon *" required id="number"> <br>
+        <textarea class="message" placeholder="Meddelande *" required id="message"></textarea> <br>
+        <div class="termsCheckboxContainer">
+            <input type="checkbox" class="termsCheckbox" id="termsCheckbox" required>
+            <label for="termsCheckbox">Jag ger mitt medgivande till att informationen jag skickar i detta formulär används av BERGLUNDS BYGG i syfte att behandla min fråga.</label>
+        </div><br>
+        <button onclick="validateAndSendMail()">Skicka</button> <br>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "LK5qdA81xytACfLc9",
+            });
+        })();
+    </script>
+</body>
+</html>
