@@ -7,12 +7,12 @@
 }
 
 .navbar {
-    background: #131313;
-    height: 80px;
+    background: #201f1f;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -32,8 +32,7 @@
 #navbar_logo {
     display: flex;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+    align-items: center;
 }
 
 .logo {
@@ -52,7 +51,7 @@
 }
 
 .navbar_links {
-    color: #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,7 +145,7 @@
 }
 
 .hero{
-    background: #131313;
+    background: #201f1f;
     background: linear-gradient(to right, #161616, #000000);
     padding: 400px 0;
 }
@@ -271,8 +270,7 @@
 
 .main_img-card {
     margin: 10px;
-    height: 200px;
-    width: 400px;
+    width: 300px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -324,7 +322,7 @@
 
 @media screen and (max-width: 480px) {
 
-    .main_img--card {
+    .main_img-card {
         height: 250px;
         width: 250px;
     }
@@ -390,8 +388,8 @@
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     margin: 35px; /* Add margin */
-    width: 125px; /* Set width */
-    height: 100px; /* Set height */
+    width: 105px; /* Set width */
+    height: 80px; /* Set height */
 }
 
 @media screen and (max-width: 960px) {
@@ -414,7 +412,7 @@
     box-sizing: border-box;
     background-color: #131313;
     margin: 0;
-    padding: 0;
+    padding: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #91EAE4;
@@ -426,7 +424,7 @@
 }
 
 .contact .fullName, .mail, .number {
-    width: 250px;
+    width: 300px;
     height: 40px;
     font-size: 15px;
     margin: 4px 0;
@@ -475,7 +473,7 @@
 
 @media screen and (max-width: 550px) {
     .contact .fullName, .mail, .number {
-        width: 150px;
+       
         height: 35px;
         font-size: 15px;
         margin: 4px 0;

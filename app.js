@@ -66,7 +66,7 @@ const highlightMenu = () => {
 
     let scrollPos = window.scrollY
 
-    // console.log(scrollPos)
+     console.log(scrollPos)
 
     if(window.innerWidth > 960 && scrollPos < 600) {
         homeMenu.classList.add('highlight')
@@ -82,7 +82,7 @@ const highlightMenu = () => {
         aboutMenu.classList.remove('highlight')
         contactMenu.classList.remove('highlight')
         return
-    } else if(window.innerWidth > 960 && scrollPos < 2666){
+    } else if(window.innerWidth > 960 && scrollPos < 2669){
         contactMenu.classList.add('highlight')
         servivesMenu.classList.remove('highlight')
         return
