@@ -82,7 +82,7 @@ const highlightMenu = () => {
         aboutMenu.classList.remove('highlight')
         contactMenu.classList.remove('highlight')
         return
-    } else if(window.innerWidth > 960 && scrollPos < 2669){
+    } else if(window.innerWidth > 960 && scrollPos < 2955){
         contactMenu.classList.add('highlight')
         servivesMenu.classList.remove('highlight')
         return
