@@ -24,12 +24,7 @@ function validateAndSendMail() {
 
 
 
-    if (!params.fullName || !params.mail || !params.message || !params.number) {
-        alert("Vänligen fyll i alla obligatoriska fält.");
-        return false;
-    }
-
-    if (!params.fullName || !params.mail || !params.message || !number) {
+    if (!params.mail || !params.message || !params.number) {
         alert("Vänligen fyll i alla obligatoriska fält.");
         return false;
     }
@@ -45,9 +40,8 @@ function validateAndSendMail() {
     }
     
     if (params.checkbox) {
-        alert("Formuläret är skickat!");
         emailjs.send("service_yjjdexg", "template_dwvopqj", params).then(function (res) {
-            alert("Meddelande skickat! " + res.status);
+            alert("Meddelande skickat!");
             
         }).catch(function (error) {
             alert("Det uppstod ett fel vid skickandet av meddelandet: " + error);
@@ -55,6 +49,7 @@ function validateAndSendMail() {
     } else {
         alert("Du måste godkänna villkoren innan du kan skicka meddelandet.");
     }
+
 }
 
 const highlightMenu = () => {
