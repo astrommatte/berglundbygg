@@ -40,7 +40,8 @@ function validateAndSendMail() {
     }
     
     if (params.checkbox) {
-        emailjs.send("service_yjjdexg", "template_dwvopqj", params).then(function (res) {
+        emailjs.send("$2a$12$v3IHBtfc.wtcsDpHF5cTyOo4LGg/9OWcbG7fFfc2XN3IFH/UQdKMK"
+                    ,"$2a$12$S8fbwhWcRTyhMsBrt/ILO.Kkz9C82yjHcoXQv7at8UIkaYwx32hJm", params).then(function (res) {
             alert("Meddelande skickat!");
             
         }).catch(function (error) {
