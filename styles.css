@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background: #9da873;
+    background: #1f1f1ffd;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
 }
 
 .navbar_links {
-    color: #504c4c;
+    color: #bbabab;
     display: flex;
     align-items: center;
     justify-content: center;
